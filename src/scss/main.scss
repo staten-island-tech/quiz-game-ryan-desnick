@@ -39,4 +39,21 @@ h2 {
 
 .btn {
   font-size: 2.5rem;
+  padding: 2rem 0;
+  width: 30rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-decoration: solid;
+  color: rgb(29, 29, 29);
+  background: linear-gradient(
+    90deg,
+    rgb(18, 92, 255) 0%,
+    rgb(0, 102, 255) 100%
+  );
+}
+
+#made-by {
+  font-size: 2rem;
+  color: white;
+  font-style: italic;
 }
