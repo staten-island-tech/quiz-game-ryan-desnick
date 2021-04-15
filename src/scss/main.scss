@@ -73,7 +73,7 @@ h2 {
   }
 }
 
-// everything above this is in index.html or is universal, but everything below this is in game.html//
+// ↑↑index.html    game.html↓↓//
 
 .game-body {
   color: white;
@@ -105,4 +105,43 @@ h2 {
 .choice-text {
   padding: 2rem;
   width: 100%;
+}
+
+.correct {
+  background: rgb(5, 136, 1);
+}
+
+.incorrect {
+  background: rgb(187, 0, 0);
+}
+
+//↑↑game.html    HUD↓↓//
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
+#progress-bar {
+  width: 20rem;
+  height: 3rem;
+  border: 0.2rem solid rgb(11, 223, 36);
+  margin-top: 2rem;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+#progress-bar-full {
+  height: 100%;
+  background: rgb(11, 223, 36);
+  width: 0%;
 }
