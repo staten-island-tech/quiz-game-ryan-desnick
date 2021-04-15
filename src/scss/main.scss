@@ -67,8 +67,42 @@ h2 {
   font-style: italic;
 }
 
-// everything above is in index.html but everything below is in game.html//
+@media screen and (max-width: 768px) {
+  .choice-container {
+    min-width: 40rem;
+  }
+}
+
+// everything above this is in index.html or is universal, but everything below this is in game.html//
 
 .game-body {
   color: white;
+}
+
+.choice-container {
+  display: flex;
+  margin-bottom: 0.75rem;
+  width: 100%;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    rgb(18, 92, 255) 0%,
+    rgb(0, 102, 255) 100%
+  );
+  min-width: 80rem;
+  font-size: 2.8rem;
+}
+
+.choice-container:hover {
+  background: rgba(0, 212, 255, 1);
+}
+
+.choice-prefix {
+  padding: 2rem;
+  color: white;
+}
+
+.choice-text {
+  padding: 2rem;
+  width: 100%;
 }
