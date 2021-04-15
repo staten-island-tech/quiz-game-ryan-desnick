@@ -38,7 +38,7 @@ h2 {
 }
 
 .btn {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   padding: 2rem 0;
   width: 30rem;
   text-align: center;
@@ -49,6 +49,15 @@ h2 {
     90deg,
     rgb(18, 92, 255) 0%,
     rgb(0, 102, 255) 100%
+  );
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(5, 249, 255, 1) 100%,
+    rgba(0, 212, 255, 1) 0%
   );
 }
 
