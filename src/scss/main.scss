@@ -79,6 +79,11 @@ h2 {
   color: white;
 }
 
+#question {
+  text-align: left;
+  font-size: 4.68rem;
+}
+
 .choice-container {
   display: flex;
   margin-bottom: 0.75rem;
@@ -124,7 +129,8 @@ h2 {
 
 .hud-prefix {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-style: italic;
 }
 
 .hud-main-text {
@@ -138,6 +144,10 @@ h2 {
   margin-top: 2rem;
   border-radius: 50px;
   overflow: hidden;
+}
+
+#progress-text {
+  font-style: italic;
 }
 
 #progress-bar-full {
