@@ -461,7 +461,7 @@ let questions = [
     choice2: "Whalen",
     choice3: "Rerick",
     choice4: "Erlenwein",
-    answer: Rerick,
+    answer: "Rerick",
   },
   {
     question: "Which restaurant has not closed down?",
@@ -469,7 +469,7 @@ let questions = [
     choice2: "KFC",
     choice3: "Five Guys",
     choice4: "TexMex",
-    answer: TexMex,
+    answer: "TexMex",
   },
   {
     question: "Which staircase should you not go up during lunchtime?",
@@ -477,7 +477,7 @@ let questions = [
     choice2: "I",
     choice3: "C",
     choice4: "F",
-    answer: I,
+    answer: "I",
   },
   {
     question: "How many minutes apart does the 79 (usually) come?",
@@ -485,7 +485,7 @@ let questions = [
     choice2: "Twenty",
     choice3: "Fifteen",
     choice4: "Five",
-    answer: Eight,
+    answer: "Eight",
   },
   {
     question: "Which MSIT sport is actually a cult?",
@@ -493,7 +493,7 @@ let questions = [
     choice2: "Ping-Pong",
     choice3: "Football",
     choice4: "Swimming",
-    answer: Track,
+    answer: "Track",
   },
 ];
 
