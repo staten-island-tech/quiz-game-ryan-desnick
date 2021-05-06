@@ -101,6 +101,7 @@ h2 {
   background: linear-gradient(90deg, #125cff 0%, #0066ff 100%);
   min-width: 80rem;
   font-size: 2.8rem;
+  cursor: pointer;
 }
 
 .choice-container:hover {
