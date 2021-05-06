@@ -556,6 +556,13 @@ choices.forEach((choice) => {
   });
 });
 
+incrementScore = (num) => {
+  score += num;
+  scoreText.innerText = score;
+};
+
+startGame();
+
 },{}]},["21c8X","3L8AI"], "3L8AI", "parcelRequire3da0")
 
 //# sourceMappingURL=index.2142d36c.js.map
