@@ -36,14 +36,6 @@ let questions = [
     answer: "I",
   },
   {
-    question: "How many minutes apart does the 79 (usually) come?",
-    choice1: "Eight",
-    choice2: "Twenty",
-    choice3: "Fifteen",
-    choice4: "Five",
-    answer: "Eight",
-  },
-  {
     question: "Which MSIT sport is actually a cult?",
     choice1: "Track",
     choice2: "Ping-Pong",
