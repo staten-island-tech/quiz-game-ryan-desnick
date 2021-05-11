@@ -1,4 +1,27 @@
+html,
 body {
-  background-color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  background-color: #242566;
+}
+
+body.correct {
+  background-color: lime;
+}
+
+body.wrong {
+  background-color: red;
 }
 /*# sourceMappingURL=index.ec8548c3.css.map */
