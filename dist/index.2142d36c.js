@@ -498,7 +498,12 @@ function selectAnswer(e) {
   Array.from(answerButtonsElement.children).forEach((button) => {
     setStatusClass(button, button.dataset.correct);
   });
-  nextButton.classList.remove("hide");
+  if (shuffledQuestions.length > currentQuestionIndex + 1) {
+    nextButton.classList.remove("hide");
+  } else {
+    startButton.innerText = "Restart";
+    startButton.classList.remove("hide");
+  }
 }
 
 function setStatusClass(element, correct) {
@@ -523,6 +528,42 @@ const questions = [
       { text: "Henriques", correct: false },
       { text: "Whalen", correct: false },
       { text: "Erlenwein", correct: false },
+    ],
+  },
+  {
+    question: "Which restaurant is still open?",
+    answers: [
+      { text: "Blaze Pizza", correct: false },
+      { text: "KFC", correct: false },
+      { text: "TexMex", correct: true },
+      { text: "Five Guys", correct: false },
+    ],
+  },
+  {
+    question: "Which staircase should you not go up during lunchtime?",
+    answers: [
+      { text: "H", correct: false },
+      { text: "I", correct: true },
+      { text: "C", correct: false },
+      { text: "F", correct: false },
+    ],
+  },
+  {
+    question: "Which MSIT sport is actually a cult?",
+    answers: [
+      { text: "Ping-Pong", correct: false },
+      { text: "Football", correct: false },
+      { text: "Swimming", correct: false },
+      { text: "Track", correct: true },
+    ],
+  },
+  {
+    question: "Is Ryan very sorry about the lateness of this project?",
+    answers: [
+      { text: "Yes", correct: true },
+      { text: "Yes", correct: true },
+      { text: "Yes", correct: true },
+      { text: "Yes", correct: true },
     ],
   },
 ];

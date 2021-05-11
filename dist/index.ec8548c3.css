@@ -18,11 +18,11 @@ body {
 }
 
 body.correct {
-  background-color: lime;
+  background-color: #059c05;
 }
 
 body.wrong {
-  background-color: red;
+  background-color: #a80404;
 }
 
 #question {
@@ -63,14 +63,14 @@ button {
 }
 
 .btn.correct {
-  border-color: lime;
-  background-color: lime;
+  border-color: #059c05;
+  background-color: #059c05;
   color: black;
 }
 
 .btn.wrong {
-  border-color: red;
-  background-color: red;
+  border-color: #a80404;
+  background-color: #a80404;
 }
 
 .start-btn,
@@ -92,5 +92,9 @@ button {
 
 .hide {
   display: none;
+}
+
+a {
+  text-align: center;
 }
 /*# sourceMappingURL=index.ec8548c3.css.map */
