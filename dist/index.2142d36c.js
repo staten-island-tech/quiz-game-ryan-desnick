@@ -450,11 +450,19 @@ startButton.addEventListener("click", startGame);
 function startGame() {
   console.log("started");
   startButton.classList.add("hide");
+  questionContainerElement.classList.remove("hide");
+  setNextQuestion();
 }
 
 function setNextQuestion() {}
 
 function selectAnswer() {}
+
+const questions = [
+  {
+    question: "",
+  },
+];
 
 },{}]},["21c8X","3L8AI"], "3L8AI", "parcelRequire3da0")
 

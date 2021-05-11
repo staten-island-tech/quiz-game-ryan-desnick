@@ -6,8 +6,16 @@ startButton.addEventListener("click", startGame);
 function startGame() {
   console.log("started");
   startButton.classList.add("hide");
+  questionContainerElement.classList.remove("hide");
+  setNextQuestion();
 }
 
 function setNextQuestion() {}
 
 function selectAnswer() {}
+
+const questions = [
+  {
+    question: "",
+  },
+];
