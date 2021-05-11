@@ -140,9 +140,9 @@
       this[globalName] = mainExports;
     }
   }
-})({"2z01o":[function(require,module,exports) {
+})({"21c8X":[function(require,module,exports) {
 var HMR_HOST = null;
-var HMR_PORT = 50763;
+var HMR_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d751713988987e9331980363e24189ce";
 module.bundle.HMR_BUNDLE_ID = "062e9a7565ca912a5f7d6b832142d36c";
@@ -555,6 +555,6 @@ incrementScore = (num) => {
 
 startGame();
 
-},{}]},["2z01o","3L8AI"], "3L8AI", "parcelRequire3da0")
+},{}]},["21c8X","3L8AI"], "3L8AI", "parcelRequire3da0")
 
 //# sourceMappingURL=index.2142d36c.js.map
