@@ -31,6 +31,10 @@ body.wrong {
   font-size: 3rem;
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   max-width: 80%;
   width: 800px;
@@ -69,4 +73,25 @@ body.wrong {
 .btn.wrong {
   border-color: $hue-wrong;
   background-color: $hue-wrong;
+}
+
+.start-btn,
+.next-btn {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.start-btn {
+  margin-right: 10px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
 }
