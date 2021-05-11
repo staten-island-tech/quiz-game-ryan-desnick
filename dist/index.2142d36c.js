@@ -442,7 +442,19 @@ id) /*: string*/
 }
 
 },{}],"3L8AI":[function(require,module,exports) {
-console.log("connected lmao");
+const startButton = document.getElementById("start-btn");
+const questionContainerElement = document.getElementById("question-container");
+
+startButton.addEventListener("click", startGame);
+
+function startGame() {
+  console.log("started");
+  startButton.classList.add("hide");
+}
+
+function setNextQuestion() {}
+
+function selectAnswer() {}
 
 },{}]},["21c8X","3L8AI"], "3L8AI", "parcelRequire3da0")
 
