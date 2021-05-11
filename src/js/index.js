@@ -1,1 +1,5 @@
-console.log("connected lmao");
+function startGame() {}
+
+function setNextQuestion() {}
+
+function selectAnswer() {}
