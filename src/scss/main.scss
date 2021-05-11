@@ -26,3 +26,46 @@ body.correct {
 body.wrong {
   background-color: $hue-wrong;
 }
+
+#question {
+  font-size: 3rem;
+}
+
+.container {
+  max-width: 80%;
+  width: 800px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  background-color: hsl(200, 100%, 45%);
+  font-size: 1.5rem;
+  border: 1px solid hsl(200, 100%, 35%);
+  border-radius: 5px;
+  color: white;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: hsl(190, 100%, 55%);
+}
+
+.btn.correct {
+  border-color: $hue-correct;
+  background-color: $hue-correct;
+}
+
+.btn.wrong {
+  border-color: $hue-wrong;
+  background-color: $hue-wrong;
+}
