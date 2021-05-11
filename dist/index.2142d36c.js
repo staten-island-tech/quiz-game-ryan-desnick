@@ -140,9 +140,9 @@
       this[globalName] = mainExports;
     }
   }
-})({"21c8X":[function(require,module,exports) {
+})({"747qG":[function(require,module,exports) {
 var HMR_HOST = null;
-var HMR_PORT = 1234;
+var HMR_PORT = 56915;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d751713988987e9331980363e24189ce";
 module.bundle.HMR_BUNDLE_ID = "062e9a7565ca912a5f7d6b832142d36c";
@@ -444,26 +444,62 @@ id) /*: string*/
 },{}],"3L8AI":[function(require,module,exports) {
 const startButton = document.getElementById("start-btn");
 const questionContainerElement = document.getElementById("question-container");
+const questionElement = document.getElementById("question");
+const answerButtonsElement = document.getElementById("answer-buttons");
+
+let shuffledQuestions, currentQuestionIndex;
 
 startButton.addEventListener("click", startGame);
 
 function startGame() {
   console.log("started");
   startButton.classList.add("hide");
+  shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+  currentQuestionIndex = 0;
   questionContainerElement.classList.remove("hide");
   setNextQuestion();
 }
 
-function setNextQuestion() {}
+function setNextQuestion() {
+  showQuestion(shuffledQuestions[currentQuestionIndex]);
+  resetState();
+}
 
-function selectAnswer() {}
+function showQuestion(question) {
+  questionElement.innerText = question.question;
+  question.answers.forEach((answer) => {
+    const button = document.createElement("button");
+    button.innerText = answer.text;
+    button.classList.add("btn");
+    if (answer.correct) {
+      button.dataset.correct = answer.correct;
+    }
+    button.addEventListener("click", selectAnswer);
+    answerButtonsElement.appendChild(button);
+  });
+}
+
+function resetState() {
+  nextButton.classList.add("hide");
+  while (answerButtonsElement.firstChild) {
+    answerButtonsElement.removeChild;
+  }
+}
+
+function selectAnswer(e) {}
 
 const questions = [
   {
-    question: "",
+    question: "Who is not bald?",
+    answers: [
+      { text: "Rerick", correct: true },
+      { text: "Henriques", correct: false },
+      { text: "Whalen", correct: false },
+      { text: "Erlenwein", correct: false },
+    ],
   },
 ];
 
-},{}]},["21c8X","3L8AI"], "3L8AI", "parcelRequire3da0")
+},{}]},["747qG","3L8AI"], "3L8AI", "parcelRequire3da0")
 
 //# sourceMappingURL=index.2142d36c.js.map
